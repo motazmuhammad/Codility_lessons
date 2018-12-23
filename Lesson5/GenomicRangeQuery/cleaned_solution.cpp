@@ -1,5 +1,4 @@
 /* this is the solution after cleaning it is more concise, easy to understand, and shorter */
-
 #include<vector>
 #include<algorithm>
 #include<numeric>
@@ -24,7 +23,10 @@ vector<int> solution(string &S, vector<int> &P, vector<int> &Q) {
     vector<vector<int>> nucletides_indices(number_of_nucletides);// a vector to save the indices of each nucletide
     for(auto x:nucletides_indices) x.reserve(S.length());// to make push_back take O(1) instead of O(log(N))
     unordered_map<char ,int> map_nucletides_to_integers={{'A',0},{'C',1},{'G',2},{'T',3}};// mapping of the nucletides to numbers for ease of use
-    for(auto& nucletide:S)nucletides_indices[map_nucletides_to_integers[nucletide]].push_back(i);
+    for(int i=0;i<S.length();i++)
+    {
+        nucletides_indices[map_nucletides_to_integers[S[i]]].push_back(i);
+    }
     vector<int> sol;// the return vector as specified by the problem
     sol.reserve(S.length());
     bool is_updated;// to halt when the solution is updated
