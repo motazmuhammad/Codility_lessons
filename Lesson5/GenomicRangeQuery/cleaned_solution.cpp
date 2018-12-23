@@ -1,4 +1,8 @@
-/* this is the solution after cleaning it is more concise, easy to understand, and shorter */
+/* this is the solution after cleaning it is more concise, easy to understand, and shorter
+interesting factoid: This code is thought to be of complexity O(N+M) by codility analyzer. Howerever its actual complexity is O(N+Mlog(M))
+I should try to write the solution of the complexity O(N+M) later.
+
+*/
 #include<vector>
 #include<algorithm>
 #include<numeric>
