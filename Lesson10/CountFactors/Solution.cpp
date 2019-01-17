@@ -1,20 +1,4 @@
-Skip to content
- 
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- @motazmuhammad Sign out
-1
-0 0 motazmuhammad/Codility_lessons
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-Codility_lessons/Lesson10/Solution.cpp
-05ecd20  2 hours ago
-@motazmuhammad motazmuhammad Create Solution.cpp
-     
-73 lines (65 sloc)  1.54 KB
 /*Algorithm: There is not much to describe this is a direct implementation of the algorithm mentioned in wikipedia here
 https://en.wikipedia.org/wiki/Divisor_function
 This problem is exactly asking for calculating sigma0 for a number n.
